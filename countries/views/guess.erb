@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <style>
+            h1{ text-align: center;}
+            a {
+                font-size:18;
+                text-decoration:none;
+                color:#FFF8DC;
+                border:#FFF8DC 1px solid;
+                padding:10px 20px;
+                border-radius:10px;
+                margin-top:20px;
+                background:#8B4513;
+            }
+            
+            
+        </style>
+    </head>
+    <body>
+        <h1>
+            <%= @question.question %>
+        </h1>
+        
+        <a href="/answer?id=<%= @question.id %>">Answer</a>
+    </body>
+</html>
